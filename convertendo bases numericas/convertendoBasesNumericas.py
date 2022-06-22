@@ -1,3 +1,4 @@
+#recebendo um valor pelo usuario
 num = int(input('Digite qualquer valor inteiro:'))
 print(''' Escolha um das bases para conversao:
 [1] converter para BINÁRIO
@@ -5,8 +6,10 @@ print(''' Escolha um das bases para conversao:
 [3] converter para HEXADECIMAL
 [4] CONVERTER TODAS''')
 
+#variavel que guardará o valor indicado pelos valores acima
 opcao = int(input('Escolha uma das opcoes acima:'))
 
+#validando as opcoes indicada pelo usuario
 if opcao == 1:
 	print('{} convertido para BINÁRIO é {}'.format(num, bin(num)[2:]))
 elif opcao == 2:
